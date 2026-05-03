@@ -23,4 +23,24 @@ public class BookController {
 		return service.get(id);
 	}
 
+	
+	
+	public String update(Book book) {
+		
+		return service.update(book);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

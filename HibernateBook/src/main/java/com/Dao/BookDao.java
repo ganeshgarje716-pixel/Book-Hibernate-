@@ -46,6 +46,33 @@ public class BookDao {
 		
 		
 		
+		public String updateBook(Book book) {
+			
+		
+			Session session = sf.openSession();
+			
+			Transaction tr = session.beginTransaction();
+			
+			Book existing = session.get(Book.class, book.getId());
+			
+			existing.setName(book.getName());
+			existing.setPrice(book.getPrice());
+			existing.setAuthor(book.getAuthor());
+			existing.setQty(book.getQty());
+			existing.setMfgDate(book.getMfgDate());
+			existing.setExDate(book.getExDate());
+			
+			session.update(existing);
+			
+			tr.commit();
+			
+			session.close();
+			
+			return "Book Update";
+		}
+		
+		
+		
 		
 		
 		

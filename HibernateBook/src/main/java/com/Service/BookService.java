@@ -20,5 +20,22 @@ public class BookService {
 		
 		return dao.getBook(id);
 	}
+	
+	
+	
+	public String update(Book book) {
+		
+		return dao.updateBook(book);	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
