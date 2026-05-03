@@ -40,6 +40,13 @@ public class BookController {
 	
 	
 	
+	public String delete(int id) {
+		
+		return service.delete(id);
+	}
+	
+	
+	
 	
 	
 	

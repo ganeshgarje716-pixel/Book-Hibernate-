@@ -83,8 +83,25 @@ public class BookDao {
 		    List<Book> books=session.createQuery("from Book").list();
 		    
 		    return books;
+		}
+		
+		
+		
+		public String deleteBook(int id) {
 			
+			Session session = sf.openSession();
 			
+			Transaction tr = session.beginTransaction();
+			
+			Book book = session.get(Book.class, id);
+			
+			session.delete(book);
+			
+			tr.commit();
+			
+			session.close();
+			
+			return "Book Delete";
 		}
 		
 		

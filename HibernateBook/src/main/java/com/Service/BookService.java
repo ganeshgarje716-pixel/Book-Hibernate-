@@ -38,6 +38,12 @@ public class BookService {
 	}
 	
 	
+	public String delete(int id) {
+		
+		return dao.deleteBook(id);
+	}
+	
+	
 	
 	
 	
