@@ -1,5 +1,7 @@
 package com.Dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -69,6 +71,20 @@ public class BookDao {
 			session.close();
 			
 			return "Book Update";
+		}
+		
+		
+		
+		
+		public List<Book> getAllBooks() {
+			
+			Session session = sf.openSession();
+			
+		    List<Book> books=session.createQuery("from Book").list();
+		    
+		    return books;
+			
+			
 		}
 		
 		

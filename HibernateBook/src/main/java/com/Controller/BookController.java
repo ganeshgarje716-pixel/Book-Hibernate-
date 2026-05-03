@@ -1,5 +1,7 @@
 package com.Controller;
 
+import java.util.List;
+
 import com.Entity.Book;
 import com.Service.BookService;
 
@@ -30,6 +32,11 @@ public class BookController {
 		return service.update(book);
 	}
 	
+	
+	public List<Book> getAll(){
+		
+		return service.getAll();
+	}
 	
 	
 	

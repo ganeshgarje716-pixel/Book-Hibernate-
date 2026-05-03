@@ -19,7 +19,13 @@ public class BookMain {
 		
 //		System.out.println(controller.get(52));
 		
-		System.out.println(controller.update(new Book(1, "BhagvatGeeta", 600, "Ved Vyas", 60, "2020-02-20", "2070-07-17")));
+
+//		System.out.println(controller.update(new Book(1, "BhagvatGeeta", 600, "Ved Vyas", 60, "2020-02-20", "2070-07-17")));
+		
+		for (Book all : controller.getAll()) {
+			
+			System.out.println(all);
+		}
 		
 		
 		

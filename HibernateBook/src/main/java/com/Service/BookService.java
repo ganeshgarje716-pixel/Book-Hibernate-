@@ -1,5 +1,7 @@
 package com.Service;
 
+import java.util.List;
+
 import com.Dao.BookDao;
 import com.Entity.Book;
 
@@ -28,6 +30,12 @@ public class BookService {
 		return dao.updateBook(book);	
 	}
 	
+	
+	
+	public List<Book> getAll(){
+		
+		return dao.getAllBooks();
+	}
 	
 	
 	
