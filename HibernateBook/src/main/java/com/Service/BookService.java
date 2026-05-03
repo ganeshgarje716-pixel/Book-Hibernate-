@@ -13,5 +13,12 @@ public class BookService {
 		
 		return dao.insertBook(book);
 	}
+	
+	
+	
+	public Book get(int id) {
+		
+		return dao.getBook(id);
+	}
 
 }

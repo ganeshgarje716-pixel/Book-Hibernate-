@@ -15,7 +15,9 @@ public class BookMain {
 		
 		
 		
-		System.out.println(controller.insert(new Book(1, "Geeta", 200, "Ved Vyas", 20, "2009-12-11", "2033-12-11")));
+//		System.out.println(controller.insert(new Book(0, "Shyam chi Aai", 250, "Sane Guruji", 90, "2023-01-22", "2099-19-10")));
+		
+		System.out.println(controller.get(52));
 		
 		
 		

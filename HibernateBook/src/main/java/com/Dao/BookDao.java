@@ -35,6 +35,17 @@ public class BookDao {
 		
 		
 		
+		public Book getBook(int id) {
+			
+			Session session = sf.openSession();
+			
+			Book book = session.get(Book.class, id);
+			
+			return book;
+		}
+		
+		
+		
 		
 		
 		

@@ -15,5 +15,12 @@ public class BookController {
 		
 		return service.insert(book);
 	}
+	
+	
+	
+	public Book get(int id) {
+		
+		return service.get(id);
+	}
 
 }
